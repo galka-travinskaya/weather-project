@@ -1,0 +1,96 @@
+// Цвета
+$main-color: #ffffff;
+$hover-color: #54b00a;
+$button-color: #60adcb;
+$link_hover-color: #303030;
+$text-color: #1d1c1c;
+$little-text-color: #666666;
+$animation-timing: 0.2s ease-in;
+
+//Стили текста
+$poppins: 'Poppins', sans-serif;
+$roboto: 'Roboto', sans-serif;
+//Стиль кнопки навигации
+%nav-button-style {
+  display: inline-block;
+  padding: 15px;
+  transition: $animation-timing;
+  &:hover {
+    color: $hover-color;
+  }
+}
+//Стиль ссылки
+%link-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+//Сброс текстовых контейнеров h1, p , h2 и т.д.
+%text-throw {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+//Сброс UL
+%list-throw {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+//Кнопка
+%button {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  background-color: $button-color;
+  color: $main-color;
+  text-decoration: none;
+  transition: $animation-timing;
+  &:hover {
+    background-color: $link_hover-color;
+    transform: translateY(-7px);
+  }
+}
+// Стили секции
+%section-style {
+  @media screen and (min-width: 320px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+// Стили контейнера
+%container-style {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (max-width: 479px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+// Стили картинки
+%img-style {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
