@@ -1,0 +1,13 @@
+
+<ul>
+    {{#each this}}
+    <li>
+        <p class="weather__item-descr">{{date}}</p>
+        <img src={{day.condition.icon}} alt="" class="weather__item-img">
+        <p class="weather__item-descr">Max {{day.maxtemp_c}}°</p>
+        <p class="weather__item-descr">Min {{day.mintemp_c}}°</p>
+        <p class="weather__item-descr">Sunrise {{astro.sunrise}}</p>
+        <p class="weather__item-descr">Sunset {{astro.sunset}}</p>
+    </li>
+    {{/each}}
+</ul>

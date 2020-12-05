@@ -1,0 +1,18 @@
+
+  <div class="weather__block-1">
+    <h2 class="weather__city">{{location.name}}, {{location.region}}, {{location.country}}</h1>
+    <p class="weather__localtime">{{location.localtime}}</p>
+  </div>
+
+  <div class="weather__description">
+    <div class="weather__block-2">
+      <p class="temperature">{{current.temp_c}}°</p>
+      <img src={{current.condition.icon}} alt="Иконка текущей погоды" class="weather__icon">
+      <p class="weather__img-desc">{{current.condition.text}}</p>
+    </div>
+    <div class="weather__block-3">
+      <p class="weather__item">Wind: {{current.wind_kph}} km/h</p>
+      <p class="weather__item">Precipitation: {{current.precip_in}} mm/h</p>
+      <p class="weather__item">Pressure: {{current.pressure_in}} inches</p>
+    </div>
+  </div>
